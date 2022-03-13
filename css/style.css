@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Staatliches', cursive;
+}
+
+body {
+    background: #2f3542;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ff4757;
+    margin-top: 80px;
+}
+
+.page-title {
+    font-size: 90px;
+    letter-spacing: 4px;
+    margin-bottom: 40px
+}
+
+.page-title span {
+    display: inline-block;
+    padding: 0 10px;
+    background-color: #ff4757;
+    color: #2f3542;
+}
+
+.page-subtitle {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.page-img {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    background: #ff4757;
+    color: #2f3542;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.page-img span {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-wrapper input[type=text] {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    outline: none;
+}
+
+.form-wrapper input[type=text]:nth-of-type(2) {
+    margin-top: 10px;
+}
+
+.category-list {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 22px;
+    color: #757575;
+    cursor: pointer;
+    outline: none;
+}
+
+.form-wrapper button {
+    width: 100%;
+    max-width: 220px;
+    height: 50px;
+    background-color: #ff4757;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-wrapper button:active {
+    transform: scale(1.2);
+}
+
+#listaResultado { 
+    margin-top: 75px;
+    padding: 0px 14px 
+}
+
+#listaFilmes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 17px 0
+}
+
+#listaFilmes img {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    margin: 15px;
+    border: 2px solid #fff;
+}
+
+#listaFilmes h2 {
+    max-width: 250px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+.categories {
+    align-content: flex-start;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    text-align: center;
+    background-color: #ff4757;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.categories option {
+    background-color: #fff;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #757575;
+}
+
+.empty-list {
+    font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 250px 0
+}
+
+@media screen and (max-width: 500px) {
+    #listaFilmes img {
+        width: 100%;
+        height: 400px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .form-wrapper {
+        padding: 20px 10px;
+    }
+
+    .form-wrapper input[type=text] {
+        width: 100%;
+        font-size: 21px;
+    }
+
+    .category-list {
+        margin-bottom: 30px;
+        font-size: 21px;
+    }
+    
+    .form-wrapper button {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 624px) {
+    .page-title {
+        font-size: 75px;
+        margin-bottom: 35px
+    }
+    
+    .page-subtitle {
+        font-size: 22px;
+    }
+
+    .page-img {
+        width: 0;
+        height: 0;
+        border-top: 30px solid #ff4757;
+        border-bottom: 30px solid transparent;
+        border-right: 30px solid #ff4757;
+        border-left: 30px solid transparent;
+        background: transparent;
+        margin: 0px;
+        font-size: 35px;
+        transform: rotate(0deg);
+    }
+    
+    .page-img span {
+        transform: rotate(0deg);
+        position: absolute;
+        top: -33px;
+        right: -22px
+    }
+
+    .empty-list {
+        padding: 150px 0
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    #listaFilmes img {
+        width: 230px;
+        height: 350px;
+    }
+}

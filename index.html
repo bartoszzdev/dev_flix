@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>DevFlix</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="page-title">
+            <strong>Dev</strong> <span>Flix</span>
+        </h1>
+
+        <p class="page-subtitle">
+            Qual seu filme favorito?
+        </p>
+
+        <div class="form-wrapper">
+            <input type="text" id="nome" name="filme" placeholder="Nome do filme">
+            <input type="text" id="filme" name="filme" placeholder="Insira o endereço de imagem do filme">
+            <select class="category-list">
+                <option selected disabled>Selecione a categoria</option>
+            </select>
+            <button onclick="adicionarFilme()">Adicionar filme</button>
+        </div>
+
+        <div class="page-img"><span>D</span></div>
+    </div>
+
+    <div id="listaResultado">
+        <select class="categories">
+            <option selected disabled>Categorias</option>
+            <option>Todos</option>
+        </select>
+    
+        <div id="listaFilmes"></div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
